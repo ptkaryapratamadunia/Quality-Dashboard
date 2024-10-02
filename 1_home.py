@@ -25,64 +25,64 @@ st.set_page_config(page_title="Quality Dashboard", page_icon=":bar_chart:", layo
 # selected
 
 # Fungsi untuk mengubah gambar menjadi base64
-def get_image_as_base64(image_path):
-    with open(image_path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode()
+# def get_image_as_base64(image_path):
+#     with open(image_path, "rb") as img_file:
+#         return base64.b64encode(img_file.read()).decode()
     
 # st.write("Bismillah")
-kolomJudul,kolomLogo=st.columns(2)
-with kolomJudul:
-    st.markdown(
-        """
-        <style>
-        .container {
-            width: 300px;
-            height: 30px;
-            display: flex;
-            align-contents:left;
-            justify-content: flex-start;
+# kolomJudul,kolomLogo=st.columns(2)
+# with kolomJudul:
+#     st.markdown(
+#         """
+#         <style>
+#         .container {
+#             width: 300px;
+#             height: 30px;
+#             display: flex;
+#             align-contents:left;
+#             justify-content: flex-start;
 
-        }
-        .judul {
-            color: yellow;
-            font-size: 27px;
-            margin-top:0px;
-            margin-bottom: 0px;
-            align-items:left;
-        }
-        .subjudul {
-            color: grey;
-            font-size: 10px;
-            margin-top: 30px;
-            margin-bottom:0px;
-        }
-        @media (max-width: 600px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-end;
-            }
-            .judul {
-                font-size: 20px;
-            }
-            .subjudul {
-                font-size: 2px;
-            }
-        }
-        </style>
-        <div class="container">
-            <div class="text">
-                <h1 class='judul'>QUALITY REPORT</h1>
-                <h2 class='subjudul'>by Imam W. ©️2024</h2>
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-    # st.title(":bar_chart: QUALITY REPORT")
-    # st.subheader("by Imam W. ©️2024")
+#         }
+#         .judul {
+#             color: yellow;
+#             font-size: 27px;
+#             margin-top:0px;
+#             margin-bottom: 0px;
+#             align-items:left;
+#         }
+#         .subjudul {
+#             color: grey;
+#             font-size: 10px;
+#             margin-top: 30px;
+#             margin-bottom:0px;
+#         }
+#         @media (max-width: 600px) {
+#             .container {
+#                 flex-direction: column;
+#                 align-items: center;
+#                 justify-content: flex-end;
+#             }
+#             .judul {
+#                 font-size: 20px;
+#             }
+#             .subjudul {
+#                 font-size: 2px;
+#             }
+#         }
+#         </style>
+#         <div class="container">
+#             <div class="text">
+#                 <h1 class='judul'>QUALITY REPORT</h1>
+#                 <h2 class='subjudul'>by Imam W. ©️2024</h2>
+#             </div>
+#         </div>
+#         """,
+#         unsafe_allow_html=True
+#     )
+#     # st.title(":bar_chart: QUALITY REPORT")
+#     # st.subheader("by Imam W. ©️2024")
 
-with kolomLogo:
+# with kolomLogo:
     # Memuat gambar
     # image = Image.open('logoKPD.PNG')
     # st.markdown(
@@ -138,9 +138,9 @@ with kolomLogo:
 
 # ---- SIDEBAR ----
 
-# st.sidebar.header(":bar_chart: QUALITY REPORT")
-# st.sidebar.markdown("""<h3 style="color:#fffff;">⚛ PT. KARYAPRATAMA DUNIA 📊</h3>""", unsafe_allow_html=True)
-st.sidebar.markdown("---")
+st.sidebar.header(":bar_chart: QUALITY REPORT")
+st.sidebar.markdown("""<h3 style="color:blue;">⚛ PT. KARYAPRATAMA DUNIA 📊</h3>""", unsafe_allow_html=True)
+    st.sidebar.markdown("---")
 
 #Upload File Data
 
