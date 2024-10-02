@@ -140,7 +140,7 @@ st.set_page_config(page_title="Quality Dashboard", page_icon=":bar_chart:", layo
 
 st.sidebar.header(":bar_chart: QUALITY REPORT")
 st.sidebar.markdown("""<h3 style="color:blue;">⚛ PT. KARYAPRATAMA DUNIA 📊</h3>""", unsafe_allow_html=True)
-    st.sidebar.markdown("---")
+st.sidebar.markdown("---")
 
 #Upload File Data
 
