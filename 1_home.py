@@ -87,7 +87,8 @@ with kolomLogo:
     # image = Image.open('logoKPD.PNG')
     # st.markdown(
         # Memuat gambar dan mengubahnya menjadi base64
-    image_base64 = get_image_as_base64('logoKPD.PNG')
+    logo_KPD='logoKPD.PNG'
+    image_base64 = get_image_as_base64(logo_KPD)
 
     # Menampilkan gambar dan teks di kolom kanan dengan posisi berdampingan
     st.markdown(
