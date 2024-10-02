@@ -87,50 +87,50 @@ with kolomLogo:
     # image = Image.open('logoKPD.PNG')
     # st.markdown(
         # Memuat gambar dan mengubahnya menjadi base64
-    logo_KPD='logoKPD.PNG'
-    image_base64 = get_image_as_base64(logo_KPD)
+    # logo_KPD='logoKPD.PNG'
+    # image_base64 = get_image_as_base64(logo_KPD)
 
     # Menampilkan gambar dan teks di kolom kanan dengan posisi berdampingan
-    st.markdown(
-        f"""
-        <style>
-        .container {{
-            display: flex;
-            align-items:center;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-        }}
-        .container img {{
-            width: 50px;
-            margin-top: -20px;
-        }}
-        .container h2 {{
-            color: grey;
-            font-size: 20px;
-            margin-top: -20px;
-            margin-right: 10px;
-            margin-bottom: 0px;
-        }}
-        @media (max-width: 600px) {{
-            .container {{
-                justify-content: center;
-            }}
-            .container img {{
-                margin-top: 0;
-            }}
-            .container h2 {{
-                margin-top: 0;
-                text-align: center;
-            }}
-        }}
-        </style>
-        <div class="container">
-            <h2>PT. KARYAPRATAMA DUNIA</h2>
-            <img src='data:image/png;base64,{image_base64}'/>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    # st.markdown(
+    #     f"""
+    #     <style>
+    #     .container {{
+    #         display: flex;
+    #         align-items:center;
+    #         justify-content: flex-end;
+    #         flex-wrap: wrap;
+    #     }}
+    #     .container img {{
+    #         width: 50px;
+    #         margin-top: -20px;
+    #     }}
+    #     .container h2 {{
+    #         color: grey;
+    #         font-size: 20px;
+    #         margin-top: -20px;
+    #         margin-right: 10px;
+    #         margin-bottom: 0px;
+    #     }}
+    #     @media (max-width: 600px) {{
+    #         .container {{
+    #             justify-content: center;
+    #         }}
+    #         .container img {{
+    #             margin-top: 0;
+    #         }}
+    #         .container h2 {{
+    #             margin-top: 0;
+    #             text-align: center;
+    #         }}
+    #     }}
+    #     </style>
+    #     <div class="container">
+    #         <h2>PT. KARYAPRATAMA DUNIA</h2>
+    #         <img src='data:image/png;base64,{image_base64}'/>
+    #     </div>
+    #     """,
+    #     unsafe_allow_html=True
+    # )
 
     #--------akhir naroh Logo
 
