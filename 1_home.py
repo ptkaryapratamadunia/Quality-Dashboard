@@ -134,7 +134,7 @@ with kolomLogo:
 
     #--------akhir naroh Logo
 
-st.markdown("""---""")
+# st.markdown("""---""")
 
 # ---- SIDEBAR ----
 
