@@ -4,6 +4,7 @@ import streamlit as st
 
 #buka file upload dr cleaning dan home.py
 df=pd.read_csv('df_cleaned_multifiltered.csv')
+df=pd.to_datetime(df)
 
 # Membuat tabel pivot by DATE---------------
 # pivot_df_tanggal= pd.pivot_table(df, values=['NG%'], index='Date', aggfunc={'NG%': 'mean'})
@@ -21,7 +22,7 @@ df=pd.read_csv('df_cleaned_multifiltered.csv')
 # Membuat tabel pivot by MONTH---------------
 pivot_df_bulan= pd.pivot_table(df, values=['TotInsp(Lot)', 'NG%'], index='Month', aggfunc={'TotInsp(Lot)': 'sum', 'NG%': 'mean'})
 
-pivot_df_bulan.index = pd.to_datetime(pivot_df_bulan.index, format='%b-%Y')
+# pivot_df_bulan.index = pd.to_datetime(pivot_df_bulan.index, format='%b-%Y')
 
 # Urutkan DataFrame berdasarkan kolom 'Month'
 pivot_df_bulan.sort_index(inplace=True)
