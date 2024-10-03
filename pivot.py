@@ -1,3 +1,6 @@
+# Bagian ini adalah kumpulan aksi untuk membuat pivot table sebelum dipakai untuk
+# pembuatan chart atau table
+
 import streamlit as st
 import pandas as pd
 # import subprocess
